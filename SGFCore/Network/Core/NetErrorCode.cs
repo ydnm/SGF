@@ -22,7 +22,12 @@ namespace SGF.Network.Core
     {
         UnkownError = -1,
         NoError = 0,
-        Timeout = 1,
-        Disconnected = 2,
+        SocketError,
+        Timeout,
+        Disconnected,
+        SessionExpire,
+        DeserializeError,
+        ReconnectFailed
+        //不能超过SocketError的枚举值
     }
 }
